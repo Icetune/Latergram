@@ -1,0 +1,80 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Akshar';
+    margin: 0px;
+    margin-top: 60px;
+}
+
+.dpf {
+    display: flex;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+}
+
+.header-container {
+    width: 1000px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    align-items: center;
+}
+
+.header-logo-text {
+    font-family: 'Charmonman';
+    font-size: 24px;
+    font-weight: 700;
+    margin-inline: 8px;
+    margin-block: 0px;
+}
+
+.header-input {
+    border: none;
+    font-family: 'Akshar';
+    font-size: 18px;
+    background-color: rgb(235, 235, 235);
+    padding-inline: 16px;
+    padding-block: 3px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.header-icon {
+    width: 28px;
+    height: 28px;
+    padding-left: 20px;
+}
+
+.home-icon-padding {
+    padding-left: 0px;
+    padding-right: 21px;
+}
+
+.header-icon-arrow {
+    transform: rotate(45deg);
+    width: 24px;
+    height: 24px;
+    position: relative;
+    bottom: 4px;
+}
