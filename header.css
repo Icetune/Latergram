@@ -1,0 +1,83 @@
+.sticky-head {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 9999;
+}
+
+.header {
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+}
+
+.header-container {
+    width: 935px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container-mobile {
+    display: none;
+}
+
+.header-logo {
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-logo-text {
+    font-family: 'Water Brush';
+    font-size: 32px;
+    font-weight: 500;
+    margin-inline: 8px;
+    margin-block: 0px;
+}
+
+.header-input-container {
+    align-items: center;
+    position: relative;
+    left: 50px;
+}
+
+.header-input-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 34px;
+}
+
+.header-input {
+    font-family: 'Akshar';
+    font-weight: 300;
+    font-size: 16px;
+
+    border: none;
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+
+    width: 210px;
+    height: 25px;
+    cursor: pointer;
+
+    padding-left: 40px;
+    padding-right: 16px;
+    padding-block: 6px;
+}
+
+.header-input:focus {
+    outline: none;
+}
+
+.header-icon-bar {
+    position: relative;
+    top: 2px;
+}
+
+.header-icon {
+    width: 28px;
+    height: 28px;
+    padding-left: 16px;
+    cursor: pointer;
+}

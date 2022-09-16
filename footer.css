@@ -1,0 +1,29 @@
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.footer-link {
+    font-size: 13px;
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    margin-block: 2px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-dot {
+    font-size: 8px;
+    padding-inline: 4px;
+    color: rgb(194, 194, 194);
+}
+
+.copyright {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(194, 194, 194);
+}

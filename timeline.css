@@ -1,0 +1,301 @@
+.stories-container {
+    width: 436px;
+    align-items: center;
+    justify-content: start;
+
+    margin-top: 15px;
+    padding-inline: 16px;
+    padding-block: 14px;
+
+    border: solid 1px rgb(219, 219, 219);
+    border-radius: 8px;
+
+    overflow: hidden;
+    /*ensert JS slider function*/
+}
+
+.story {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    text-align: center;
+    padding-inline: 8px;
+}
+
+.story-profile-pic-outline {
+    background-image: url(img/story-profile-pic-outline.PNG);
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
+
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.story-profile-pic {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+
+    border-radius: 56px;
+    border: solid 2px rgb(255, 255, 255);
+}
+
+.story-profile-name {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 13px;
+
+    max-width: 60px;
+    /*ensert JS function, that slices a long name and puts ... instead*/
+    overflow: hidden;
+    /*ensert JS function, that slices a long name and puts ... instead*/
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+.post-head {
+    width: 468px;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+
+    border: solid 1px rgb(219, 219, 219);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+
+    margin-top: 15px;
+}
+
+.post-profile {
+    align-items: center;
+    cursor: pointer;
+}
+
+.post-profile-pic-outline {
+    background-image: url(img/story-profile-pic-outline.PNG);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+    align-items: center;
+    justify-content: center;
+    margin-inline: 8px;
+}
+
+.post-profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    border: solid 2px rgb(255, 255, 255);
+}
+
+.post-username {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.post-settings {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+.post-img {
+    width: 470px;
+    min-height: 470px;
+    max-height: 570px;
+    object-fit: cover;
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+.post-caption {
+    width: 468px;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    bottom: 6px;
+
+    border: solid 1px rgb(219, 219, 219);
+    border-top: none;
+}
+
+.post-caption-margin {
+    width: 444px;
+    flex-direction: column;
+}
+
+.post-icons {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-single-icon {
+    width: 28px;
+    height: 28px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.post-likes {
+    margin: 0px;
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.post-description {
+    /*JS function that cuts the caption and puts ... instead at a certain length*/
+    margin-block: 6px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.post-all-comments {
+    margin: 0px;
+    font-weight: 400;
+    font-size: 15px;
+    color: rgb(163, 163, 163);
+    cursor: pointer;
+}
+
+.post-upload {
+    margin-block: 6px;
+    padding-block: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(163, 163, 163);
+}
+
+.post-translation {
+    color: black;
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+    top: 1px;
+}
+
+.comment-container {
+    width: 468px;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    bottom: 6px;
+
+    border: solid 1px rgb(219, 219, 219);
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.comment-input-container {
+    align-items: center;
+}
+
+.emoji-icon {
+    width: 28px;
+    height: 28px;
+    padding-inline: 12px;
+    cursor: pointer;
+}
+
+.post-comment-input {
+    border: none;
+    cursor: pointer;
+}
+
+.post-comment-input:focus {
+    outline: none;
+}
+
+.post-comment-btn {
+    color: #B3DFFC;
+    font-weight: 600;
+    padding-inline: 16px;
+    cursor: pointer;
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+.profiles {
+    width: 40%;
+    margin-top: 36px;
+    justify-content: center;
+}
+
+.profiles-container {
+    width: 90%;
+    flex-direction: column;
+}
+
+.logged-in-profile {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logged-in-left {
+    align-items: center;
+}
+
+.logged-in-profile-pic {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    margin-right: 12px;
+
+    border-radius: 56px;
+}
+
+.logged-in-username {
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.logged-in-real-name {
+    margin: 0px;
+    font-size: 15px;
+    color: rgb(163, 163, 163);
+}
+
+.logged-in-change-follow-btn {
+    color: #0097fc;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.logged-in-suggestions {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sugesstion-4u {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(163, 163, 163);
+}
+
+.show-em-all {
+    font-size: 14px;
+}
+
+.logged-in-stranger-profile-pic {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    margin-right: 12px;
+
+    border-radius: 32px;
+}
