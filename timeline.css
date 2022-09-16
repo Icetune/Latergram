@@ -138,6 +138,7 @@
 .post-icons {
     justify-content: space-between;
     align-items: center;
+    margin-top: 6px;
 }
 
 .post-single-icon {
@@ -213,6 +214,7 @@
 .post-comment-input {
     border: none;
     cursor: pointer;
+    background-color: rgb(250, 250, 250);
 }
 
 .post-comment-input:focus {

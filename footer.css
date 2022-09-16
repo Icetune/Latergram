@@ -7,7 +7,7 @@
 
 .footer-link {
     font-size: 13px;
-    color: rgb(194, 194, 194);
+    color: rgb(163, 163, 163);
     text-decoration: none;
     margin-block: 2px;
 }
@@ -19,11 +19,15 @@
 .footer-dot {
     font-size: 8px;
     padding-inline: 4px;
-    color: rgb(194, 194, 194);
+    color: rgb(163, 163, 163);
 }
 
 .copyright {
     font-size: 15px;
     font-weight: 300;
-    color: rgb(194, 194, 194);
+    color: rgb(163, 163, 163);
+}
+
+.mobile-footer-container {
+    display: none;
 }

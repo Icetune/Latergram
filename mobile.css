@@ -5,7 +5,7 @@
     }
 
     .header-input-container {
-        left: 0pc;
+        left: 0px;
     }
 
     /*///////////////////////////////////////////////////////////////*/
@@ -20,6 +20,22 @@
 
     .center-main {
         width: auto;
+    }
+
+    /*///////////////////////////////////////////////////////////////*/
+
+    .mobile-footer-container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+
+        max-width: 100%;
+        margin-top: 28px;
+    }
+
+    .mobile-footer-links {
+        width: 80%;
     }
 
 }
@@ -49,39 +65,63 @@
         width: 95%;
     }
 
+    .mobile-header-icon {
+        width: 28px;
+        height: 28px;
+    }
+
 }
 
 @media(max-width: 470px) {
 
     .main {
-        position: absolute;
-        left: 0;
-        right: 0;
+        width: 100%;
     }
 
     .timeline {
-        width: auto;
+        width: 100%;
     }
 
     .stories-container {
-        width: 100vw;
+        width: 100%;
         padding-inline: 0px;
+        border-radius: 0px;
+        border-inline: none;
+        margin-bottom: 15px;
     }
 
     .post-head {
-        width: 100vw;
+        width: 100%;
+        border-radius: 0px;
+        border-inline: none;
+        margin-top: 0px;
+    }
+
+    .post-profile-pic-outline {
+        margin-left: 12px;
+    }
+
+    .post-settings {
+        margin-right: 18px;
     }
 
     .post-img {
-        width: 100vw;
+        width: 100%;
+    }
+
+    .post-caption-margin {
+        width: 94%;
     }
 
     .post-caption {
-        width: 100vw;
+        width: 100%;
+        border-radius: 0px;
+        border-inline: none;
     }
 
     .comment-container {
-        width: 100vw;
+        width: inherit;
+        border: none;
     }
 
 }
