@@ -23,76 +23,28 @@
 </head>
 
 
-<body onload="includeHTML(), show()">
+<body onload="includeHTML(), renderPage()">
 
     <div class="sticky-head" w3-include-html="templates/header.html"></div>
 
     <maincontainer class="center-main dpf">
         <main class="main dpf">
             <timeline class="timeline">
-                <stories class="stories-container dpf">
-
-                    <story class="story dpf">
-                        <div class="story-profile-pic-outline dpf">
-                            <img class="story-profile-pic" src="img/profile/Steven.PNG">
-                        </div>
-                        <p class="story-profile-name">Icetune3003</p>
-                    </story>
-                    <story class="story dpf">
-                        <div class="story-profile-pic-outline dpf">
-                            <img class="story-profile-pic" src="img/profile/Steven.PNG">
-                        </div>
-                        <p class="story-profile-name">Icetune3003</p>
-                    </story>
-                    <story class="story dpf">
-                        <div class="story-profile-pic-outline dpf">
-                            <img class="story-profile-pic" src="img/profile/Steven.PNG">
-                        </div>
-                        <p class="story-profile-name">Icetune3003</p>
-                    </story>
-                    <story class="story dpf">
-                        <div class="story-profile-pic-outline dpf">
-                            <img class="story-profile-pic" src="img/profile/Steven.PNG">
-                        </div>
-                        <p class="story-profile-name">Icetune3003</p>
-                    </story>
-                    <story class="story dpf">
-                        <div class="story-profile-pic-outline dpf">
-                            <img class="story-profile-pic" src="img/profile/Steven.PNG">
-                        </div>
-                        <p class="story-profile-name">Icetune3003</p>
-                    </story>
-                    <story class="story dpf">
-                        <div class="story-profile-pic-outline dpf">
-                            <img class="story-profile-pic" src="img/profile/Steven.PNG">
-                        </div>
-                        <p class="story-profile-name">Icetune3003</p>
-                    </story>
-
+                <stories id="all-stories" class="stories-container dpf">
                 </stories>
-
-
 
                 <posts id="all-posts">
                 </posts>
 
             </timeline>
 
-            <profiles class="profiles dpf">
+            <right-side class="profiles dpf">
 
                 <div class="profiles-container dpf">
 
                     <div class="logged-in-profile dpf">
 
-                        <div class="logged-in-left dpf">
-
-                            <img class="logged-in-profile-pic" src="img/profile/Steven.PNG">
-
-                            <div>
-                                <p class="logged-in-username">username</p>
-                                <p class="logged-in-real-name">real name</p>
-                            </div>
-
+                        <div id="looged-in-user" class="logged-in-left dpf">
                         </div>
 
                         <p class="logged-in-change-follow-btn">Wechseln</p>
@@ -104,84 +56,10 @@
                         <p class="show-em-all">Alle ansehen</p>
                     </div>
 
-                    <div class="logged-in-profile dpf">
-
-                        <div class="logged-in-left dpf">
-
-                            <img class="logged-in-stranger-profile-pic" src="img/profile/Steven.PNG">
-
-                            <div>
-                                <p class="logged-in-username">username</p>
-                                <p class="logged-in-real-name">real name</p>
-                            </div>
-
-                        </div>
-
-                        <p class="logged-in-change-follow-btn">Folgen</p>
-
+                    <div id="sugesstions">   
                     </div>
-                    <div class="logged-in-profile dpf">
 
-                        <div class="logged-in-left dpf">
 
-                            <img class="logged-in-stranger-profile-pic" src="img/profile/Steven.PNG">
-
-                            <div>
-                                <p class="logged-in-username">username</p>
-                                <p class="logged-in-real-name">real name</p>
-                            </div>
-
-                        </div>
-
-                        <p class="logged-in-change-follow-btn">Folgen</p>
-
-                    </div>
-                    <div class="logged-in-profile dpf">
-
-                        <div class="logged-in-left dpf">
-
-                            <img class="logged-in-stranger-profile-pic" src="img/profile/Steven.PNG">
-
-                            <div>
-                                <p class="logged-in-username">username</p>
-                                <p class="logged-in-real-name">real name</p>
-                            </div>
-
-                        </div>
-
-                        <p class="logged-in-change-follow-btn">Folgen</p>
-
-                    </div>
-                    <div class="logged-in-profile dpf">
-
-                        <div class="logged-in-left dpf">
-
-                            <img class="logged-in-stranger-profile-pic" src="img/profile/Steven.PNG">
-
-                            <div>
-                                <p class="logged-in-username">username</p>
-                                <p class="logged-in-real-name">real name</p>
-                            </div>
-
-                        </div>
-
-                        <p class="logged-in-change-follow-btn">Folgen</p>
-
-                    </div>
-                    <div class="logged-in-profile dpf">
-
-                        <div class="logged-in-left dpf">
-
-                            <img class="logged-in-stranger-profile-pic" src="img/profile/Steven.PNG">
-
-                            <div>
-                                <p class="logged-in-username">username</p>
-                                <p class="logged-in-real-name">real name</p>
-                            </div>
-
-                        </div>
-
-                        <p class="logged-in-change-follow-btn">Folgen</p>
 
                     </div>
 
@@ -202,7 +80,7 @@
 
                 </div>
 
-            </profiles>
+            </right-side>
 
         </main>
     </maincontainer>
@@ -224,7 +102,6 @@
         <p class="copyright">© 2022 LATERGRAM FROM STEVEN</p>
 
     </footer>
-
 
 </body>
 
