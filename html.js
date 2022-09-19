@@ -1,4 +1,6 @@
-function createAPost(post, randomLikes, randomComments) {
+function createAPost(post, randomLikes, randomComments, postNumber) {
+
+    // console.log(postNumber);
     
     document.getElementById('all-posts').innerHTML += `
 
@@ -51,7 +53,7 @@ function createAPost(post, randomLikes, randomComments) {
                         Alle ${randomComments} Kommentare ansehen
                     </p>
 
-                    <span id="add-comment" class="whole-comment dpf">
+                    <span id="add-comment${postNumber}" class="whole-comment dpf">
                     </span>
 
                     <span>
@@ -65,15 +67,13 @@ function createAPost(post, randomLikes, randomComments) {
 
             </div>
 
-            <form class="comment-container dpf" onsubmit="createAComment(); return false;">
+            <form class="comment-container dpf" onsubmit="createAComment(${postNumber}); return false;">
                 <div class="comment-input-container dpf">
                     <img class="emoji-icon" src="icon/icons8-glücklich-32.png">
-                    <input required id="comment" class="post-comment-input" type="text" placeholder="Kommentieren ..." required>
+                    <input required id="comment${postNumber}" class="post-comment-input" type="text" placeholder="Kommentieren ..." required>
                 </div>
                 <input value="Posten" type="submit" class="post-comment-btn">
             </form>
-
-            
 
         <post>
 

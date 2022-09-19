@@ -54,14 +54,18 @@ function renderPage() {
     document.getElementById('sugesstions').innerHTML = '';
     document.getElementById('looged-in-user').innerHTML = '';
 
-    for (let i = 0; i < 1; i++) {
+    postNumber = 0;
+
+    for (let i = 0; i < posts.length; i++) {
         const post = posts[i];
 
         let randomLikes = Math.floor(Math.random() * 1000);
         let randomComments = Math.floor(Math.random() * 500);
 
         createOneStory(post);
-        createAPost(post, randomLikes, randomComments);
+        createAPost(post, randomLikes, randomComments, postNumber);
+
+        postNumber++;
         
     }
 
@@ -78,11 +82,11 @@ function renderPage() {
 
 
 
-function createAComment() {
+function createAComment(postNumber) {
 
-    let x = document.getElementById(`comment`).value;
+    let x = document.getElementById(`comment${postNumber}`).value;
 
-    document.getElementById(`add-comment`).innerHTML += `
+    document.getElementById(`add-comment${postNumber}`).innerHTML += `
     
     <div class="comment-space-b dpf">
     <p class="comment-text"><b class="comment-username">Du </b>
